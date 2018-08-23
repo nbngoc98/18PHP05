@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>FOOD-DRINK</title>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="js/script.js"/>
+<link rel="stylesheet" href="css/gallery/foundation.min.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/gallery/set1.css" />
+</head>
+<body id="FOOD-DRINK" data-spy="scroll" data-target=".navbar" data-offset="50">
+       <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand " href="#myPage"><img src="images/logo.png" width="60px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="food-drink.html">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage"><span class="glyphicon glyphicon-home"></span></a></li>
+		<li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#FOOD-DRINK">FOOD-DRINK
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Drink</a></li>
+          </ul>
+        </li>
+		<li><a href="#">ĂN VẶT-VỈA HÈ</a></li>
+		<li><a href="#">ABOUT US</a></li>
+		<li><a href="#">CONTACT</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	  <li><form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+      <input type="text" placeholder="Search.." name="search2">
+      <button type="submit"><i class="fa fa-search"></i></button>
+      </form></li>
+      </ul>
+    </div>
+  </div>
+</nav><br> <br><br><br>
+  <div id="content">
+	<div class="container">
+	<center><h1>Food-Drink</h1></center>
+<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Q.Hải Châu</button>
+<button class="tablink" onclick="openPage('News', this, 'green')">Q.Liên Chiểu</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">Q.Sơn Trà</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">Q.Ngũ Hành Sơn</button>
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="images/doan7.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <b>Tàu Hủ Xe Lam - Trần Phú</b>
+			<p>176 Trần Phú , Quận Hải Châu, Đà Nẵng<p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/nature.jpg" target="_blank">
+          <img src="images/doan4.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <b>Cơm Gà Vivi's House</b>
+			<p>185-187 Huỳnh Tấn Phát, Q.Hải Châu, Đà Nẵng<p>
+          </div>
+        </a>
+      </div>
+    </div>
+	<div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/lights.jpg" target="_blank">
+          <img src="images/doan3.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <b>Bún Bò O Huệ</b>
+			<p>Bùng Binh Nguyễn Văn Linh, Q.Hải Châu, Đà Nẵng<p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <a href="/w3images/fjords.jpg" target="_blank">
+          <img src="images/doan2.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <b>Mì Quảng Ếch Bếp Trang </b>
+			<p>30 Lê Đình Dương, Q.Hải Châu, Đà Nẵng<p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+  <footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Food Love</a></p> 
+    </footer>
+	
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
